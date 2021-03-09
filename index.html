@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/assets/main.css">
+	<script src="/scripts/toDoList.js"></script>
+	<script src="/scripts/task.js"></script>
+	<script src="/scripts/details.js"></script>
+	<script src="/scripts/form.js"></script>
+	<script src="/scripts/script.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<h1>TP2</h1>
+	</header>
+
+	<section>
+		<form data-js-form>
+			<h2>Ajouter une tâche</h2>
+			<label for="nom">Nom de la tâche: </label>
+			<input data-js-name required type="text" name="nom" id="nom"><br>
+			<label for="description">Description: </label>
+			<input data-js-description type="text" name="description" id="description"><br>
+			<label for="importance">Importance: </label>
+			<label for="importance">Haute: </label>
+			<input data-js-importance type="radio" name="importance" id="haute" value="1">
+			<label for="importance">Moyenne: </label>
+			<input data-js-importance type="radio" name="importance" id="moyenne" value="2">
+			<label for="importance">Basse: </label>
+			<input data-js-importance type="radio" name="importance" id="basse" value="3"><br>
+			<button class="ajout" data-js-submit>Ajouter la tâche</button>
+
+		</form>
+
+	</section>
+
+	<section class="task_list">
+		<h2>Liste des tâches</h2>
+		<div data-js-listTasks></div>
+
+		<button class="btn_order" data-js-alphaOrder>Trier par ordre alphabétique</button><button class="btn_order" data-js-impOrder>Trier par ordre d'importance</button>
+
+
+	</section>
+	
+	<section class="task_details">
+		<h2>Détails d'une tâche</h2>
+		<div data-js-detail></div>
+
+
+
+	</section>
+	
+</body>
+</html>
